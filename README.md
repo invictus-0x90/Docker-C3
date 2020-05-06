@@ -23,6 +23,6 @@ Uses dotnet-runtime and wine on linux to run the C3 web app, downloads the first
 
 3. To view Gateway logs execute `tail -f ./data/c3\_server\_$id/gateway/gateway.log`
 
-4. To upload customised relay executables for new relays simply move them to ./data/c3\_server\_$id/Bin
+4. To upload customised relay executables for new relays simply move them to ./data/c3_server_$id/Bin
 
 * If the Gateway errors for some reason, you can run `docker restart c3_server_$id`, the network will not be deleted.

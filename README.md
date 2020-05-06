@@ -21,7 +21,7 @@ Uses dotnet-runtime and wine on linux to run the C3 web app, downloads the first
 
 2. A folder will be created for that C3 instance in ./data/c3\_server\_$id
 
-3. To view Gateway logs execute `tail -f ./data/c3\_server\_$id/gateway/gateway.log`
+3. To view Gateway logs execute `tail -f ./data/c3_server_$id/gateway/gateway.log`
 
 4. To upload customised relay executables for new relays simply move them to ./data/c3_server_$id/Bin
 

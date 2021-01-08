@@ -1,10 +1,8 @@
 #!/bin/bash
 
-echo "[+] Publishing the WebController"
-cd /app/C3/Src/WebController/Backend && dotnet publish -c Release -v d -r linux-x64
-
 echo "[+] Running the web app"
-screen -dmS c3-web /bin/bash -c "cd /app/C3/Src/WebController/Backend && dotnet ../../../Bin/WebController/Release/netcoreapp2.1/linux-x64/C3WebController.dll --urls \"http://0.0.0.0:52935\""
+
+screen -dmS c3-web /bin/bash -c "cd /app/C3/WebController && dotnet C3WebController.dll --urls \"http://0.0.0.0:52935\""
 
 echo "[+] Waiting for Web to come up"
 

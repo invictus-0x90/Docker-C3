@@ -18,7 +18,6 @@ RUN wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsof
 RUN add-apt-repository universe
 RUN apt install -y apt-transport-https
 RUN apt update
-RUN apt install -y aspnetcore-runtime-5.0 aspnetcore-runtime-2.1 dotnet-sdk-5.0
-
+RUN apt install -y aspnetcore-runtime-5.0 aspnetcore-runtime-2.1 dotnet-sdk-5.0 aspnetcore-runtime-3.1
 # Run the web app, wait for it to come alive and then start a gateway using Wine
 CMD ["/bin/bash", "run.sh"]
